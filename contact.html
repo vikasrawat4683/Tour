@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">    
+    <!-- bootstrap link -->
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- font awesome cdn -->
+
+</head>
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+    <a class="navbar-brand" href="index.html" id="logo"><span>Tou</span>rism</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav me-auto">
+    <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="packages.html">Packages</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+    </li>
+    </ul>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+    Sign Up
+    </button>
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <form>
+    <div class="mb-3">
+    <label for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+    </div>
+    <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- contact us start -->
+    <div class="container01">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, please fill out the form below.</p>
+    <form>
+    <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Your Name">
+    </div>
+    <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Your Email">
+    </div>
+    <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    <div class="container01">
+    <div class="row">
+    <div class="col-md-6">
+    <h3>Contact Details</h3>
+    <address>
+    <p><strong>Address:</strong><br>
+    123 Tourism Street<br>
+    Cityville, Touristan</p>
+    <p><strong>Phone:</strong><br>
+    +1 (123) 456-7890</p>
+    <p><strong>Email:</strong><br>
+    info@tourism.com</p>
+    </address>
+    </div>
+    <div class="col-md-6">
+    <div class="map">
+    <iframe class="map-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-90.123456!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDUyJzEyLjEiTiA5MMKwMjInMTMuMCJF!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" allowfullscreen></iframe>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- contact us end -->
+
+    <!-- footert start -->
+    <footer id="footer">
+    <h1>Travel</h1>
+    <p>"Explore the world with us and let your adventures unfold."<br>
+        "Wanderlust: Where every journey becomes a story."</p>
+    <div class="social-links">
+    <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="credit">
+    <p>Designed By <a href="#">VR Coding</a></p>
+    </div>
+    <div class="copyright">
+    <p>&copy;Copyright VR Coding. All Rights Reserved</p>
+    </div>
+    </footer>
+    <!-- footer end -->
+   
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

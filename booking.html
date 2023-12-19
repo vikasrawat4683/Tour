@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#totalCost {
+    font-weight: bold;
+    color: #3498db;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Book Now</h1>
+    <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" name="roomType" required>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <label for="checkIn">Check-in Date:</label>
+        <input type="date" id="checkIn" name="checkIn" required>
+
+        <label for="checkOut">Check-out Date:</label>
+        <input type="date" id="checkOut" name="checkOut" required>
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+        <label for="totalCost">Total Cost:</label>
+        <input type="text" id="totalCost" name="totalCost" readonly>
+
+        <button type="button" onclick="submitBooking()">Book Now</button>
+    </form>
+
+    <div id="bookingStatus"></div>
+</div>
+
+<script>
+    function calculateTotal() {
+    const roomType = document.getElementById('roomType').value;
+    const checkIn = new Date(document.getElementById('checkIn').value);
+    const checkOut = new Date(document.getElementById('checkOut').value);
+
+    // Validate dates
+    if (checkIn >= checkOut) {
+        alert('Check-out date must be after check-in date');
+        return;
+    }
+
+    const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+    const numberOfNights = Math.round(Math.abs((checkIn - checkOut) / oneDay));
+
+    let roomRate;
+
+    // Set room rate based on room type
+    switch (roomType) {
+        case 'standard':
+            roomRate = 100;
+            break;
+        case 'deluxe':
+            roomRate = 150;
+            break;
+        case 'suite':
+            roomRate = 200;
+            break;
+        default:
+            roomRate = 100; // Default to standard room
+    }
+
+    const totalCost = numberOfNights * roomRate;
+    document.getElementById('totalCost').value = `$${totalCost}`;
+}
+
+function submitBooking() {
+    // Implement your booking submission logic here
+    // For this example, let's just display a confirmation message
+    const bookingStatus = document.getElementById('bookingStatus');
+    bookingStatus.innerHTML = `
+        <p>Booking confirmed!</p>
+        <p>Name: ${document.getElementById('name').value}</p>
+        <p>Email: ${document.getElementById('email').value}</p>
+        <p>Room Type: ${document.getElementById('roomType').value}</p>
+        <p>Check-in Date: ${document.getElementById('checkIn').value}</p>
+        <p>Check-out Date: ${document.getElementById('checkOut').value}</p>
+        <p>Total Cost: ${document.getElementById('totalCost').value}</p>
+    `;
+}
+</script>
+</body>
+</html>
