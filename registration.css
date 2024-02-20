@@ -1,0 +1,33 @@
+/************** registration start ****************/
+
+body {
+    background-image: url(tourism/banner.jpg);
+    background-size: cover;
+}
+
+.registration-form {
+    background-image: url(tourism/france1.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+.registration-form h2 {
+    color: #007bff;
+    text-shadow: 1px 1px darkblue;
+}
+
+.registration-form label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.registration-form input {
+    text-shadow: 1px 1px darkblue;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/************** registration end ****************/

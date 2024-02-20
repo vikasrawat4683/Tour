@@ -1,0 +1,28 @@
+/************** login start ****************/
+
+body {
+    background-image: url(tourism/japan2.jpg);
+    background-size: cover;
+}
+
+.login-form {
+    background-image: url(tourism/china1.jpg);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-label {
+    font-weight: bolder;
+}
+
+.form-control {
+    font-weight: bolder;
+    text-shadow: 1px 0px darkblue;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/************** login start ****************/

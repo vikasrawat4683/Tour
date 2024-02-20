@@ -4,8 +4,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContactUs</title>
+    <title>contact-us</title>
+
+    <!-- css link -->
     <link rel="stylesheet" href="contact.css">
+    <!-- css link -->
 
     <!-- bootstrap link -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">    
@@ -19,7 +22,7 @@
 <body>
 
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" >
     <div class="container">
     <a class="navbar-brand" href="index.html" id="logo"><span>Tou</span>rism</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -39,37 +42,13 @@
     <li class="nav-item">
     <a class="nav-link" href="about.html">About</a>
     </li>
+    <li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+    </li>
     </ul>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
-    Sign Up
+    <button type="submit" class="btn btn-primary">
+    <a class="nav-link" href="login.html">Login</a>
     </button>
-    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="modal-header">
-    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    <form>
-    <div class="mb-3">
-    <label for="username" class="form-label">Username</label>
-    <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
-    </div>
-    <div class="mb-3">
-    <label for="email" class="form-label">Email</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-    </div>
-    <div class="mb-3">
-    <label for="password" class="form-label">Password</label>
-    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign Up</button>
-    </form>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     </div>
     </nav>
@@ -111,7 +90,7 @@
     </div>
     <div class="col-md-6">
     <div class="map">
-    <iframe class="map-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-90.123456!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDUyJzEyLjEiTiA5MMKwMjInMTMuMCJF!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48902366.36064899!2d-171.6723633!3d41.5743613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee98f9a706f6b7%3A0x243a848ad19b6c70!2sCityville!5e0!3m2!1sen!2sin!4v1708417605094!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>
     </div>
@@ -131,7 +110,7 @@
     <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
     </div>
     <div class="credit">
-    <p>Designed By <a href="#">VR Coding</a></p>
+    <p>Designed By <a class="nav-link" href="#">VR Coding</a></p>
     </div>
     <div class="copyright">
     <p>&copy;Copyright VR Coding. All Rights Reserved</p>
@@ -139,7 +118,23 @@
     </footer>
     <!-- footer end -->
    
-
+    
+    <!-- script start -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="jquery.js"></script>
+    
+    <script type="text/javascript">
+    $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 50) {
+    $(".navbar").addClass("active");
+    }
+    else {
+    $(".navbar").removeClass("active");
+    }
+    });
+    </script>
+    <!-- script end -->
+
 </body>
 </html>

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spain</title>
+    <title>spain</title>
+
+    <!-- css link -->
     <link rel="stylesheet" href="styles.css">
+    <!-- css link -->
 
     <!-- bootstrap link -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -15,79 +19,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- font awesome cdn -->
 
-
 </head>
 <body>
 
-        <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container">
-        <a class="navbar-brand" href="index.html" id="logo"><span>Tou</span>rism</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span><i class="fa-solid fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="packages.html">Packages</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-        </li>
-        </ul>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
-        Sign Up
-        </button>
-        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        <form>
-        <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
-        </div>
-        <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-        </div>
-        <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-        </form>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </nav>
-        <!-- navbar end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" >
+    <div class="container">
+    <a class="navbar-brand" href="index.html" id="logo"><span>Tou</span>rism</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav me-auto">
+    <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="packages.html">Packages</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+    </li>
+    </ul>
+    <button type="submit" class="btn btn-primary">
+    <a class="nav-link" href="login.html">Login</a>
+    </button>
+    </div>
+    </div>
+    </nav>
+    <!-- navbar end -->
+    
 
 
     <!-- home section start -->
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
+    <div class="carousel-item active">
     <img src="tourism/spain2.jpg" class="d-block w-100" alt="..." id="a">
     <div class="carousel-caption" id="b">
     <h1 id="c">WELCOME TO WORLD</h1>
     <h1 id="c">VISIT SPAIN</h1>
     </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item">
     <img src="tourism/spain3.jpg" class="d-block w-100" alt="..." id="a">
     <div class="carousel-caption" id="b">
     <h1 id="c">WELCOME TO WORLD</h1>
@@ -117,8 +97,8 @@
     <section class="gallary">
     <div class="container">
     <div class="main-txt">
-    <h1><span>Trending</span> destinations</h1>
-    <p>Most popular choices travellers from SPAIN</p>
+    <h1><span>Trending</span> Destinations</h1>
+    <p>Most Popular Choices Travellers From SPAIN</p>
     </div>
     <div class="row" style="margin-top: 30px;">
     <div class="col-md-4 py-3 py-md-0">
@@ -176,141 +156,142 @@
     </section>
     <!-- section gallery end -->
 
-                <!-- about start -->
-                <section class="about">
-                <div class="container">
-                <div class="main-txt">
-                <h1>About<span> Country</span></h1>
-                </div>
-                <div class="row" style="margin-top: 50px;">
-                <div class="col-md-6 py-3 py-md-0">
-                <div class="card">
-                <img src="tourism/spain10.jpg" alt="" height="400px">
-                </div>
-                </div>
-                <div class="col-md-6 py-3 py-md-0">
-                <h2>History</h2>
-                <p>The history of Spain is a rich tapestry that spans millennia, with influences from various cultures shaping its development. The Iberian Peninsula, where Spain is located, was inhabited by various ancient cultures, including the Celts, Iberians, and Phoenicians. The Roman Empire left a significant imprint on the region, introducing Latin and Roman law. In the 8th century, the Islamic Moors crossed into Spain, leading to the establishment of Al-Andalus. The Reconquista, a centuries-long Christian reconquest, gradually pushed the Moors southward. In 1492, the Catholic Monarchs, Ferdinand II of Aragon and Isabella I of Castile, completed the Reconquista by capturing Granada. That same year, Christopher Columbus, sponsored by Spain, reached the Americas, marking the beginning of Spain's colonial expansion. The 16th century became known as the Spanish Golden Age, marked by artistic, literary, and economic prosperity. However, the 17th century saw a decline, exacerbated by wars, economic troubles, and political challenges.</p>
-                <a href="hotel.html"><button id="about-btn">Book Now</button></a>
-                </div>
-                </div>
-                </div>
-                </section>
-                <!-- about end -->
+    <!-------------------- about start -------------------> 
+    <!-- history start -->
+    <section class="about">
+    <div class="container">
+    <div class="main-txt">
+    <h1>About<span> Country</span></h1>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 py-3 py-md-0">
+    <div class="card">
+    <img src="tourism/spain10.jpg" alt="" height="400px">
+    </div>
+    </div>
+    <div class="col-md-6 py-3 py-md-0">
+    <h2>History</h2>
+    <p>The history of Spain is a rich tapestry that spans millennia, with influences from various cultures shaping its development. The Iberian Peninsula, where Spain is located, was inhabited by various ancient cultures, including the Celts, Iberians, and Phoenicians. The Roman Empire left a significant imprint on the region, introducing Latin and Roman law. In the 8th century, the Islamic Moors crossed into Spain, leading to the establishment of Al-Andalus. The Reconquista, a centuries-long Christian reconquest, gradually pushed the Moors southward. In 1492, the Catholic Monarchs, Ferdinand II of Aragon and Isabella I of Castile, completed the Reconquista by capturing Granada. That same year, Christopher Columbus, sponsored by Spain, reached the Americas, marking the beginning of Spain's colonial expansion. The 16th century became known as the Spanish Golden Age, marked by artistic, literary, and economic prosperity. However, the 17th century saw a decline, exacerbated by wars, economic troubles, and political challenges.</p>
+    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- history end -->
                 
-                    <!-- about start -->
-                    <section class="about">
-                    <div class="container">
-                    <div class="row" style="margin-top: 50px;">
-                    <div class="col-md-6 py-3 py-md-0">
-                    <div class="card">
-                    <img src="tourism/spain11.jpg" alt="" height="410px">
-                    </div>
-                    </div>
-                    <div class="col-md-6 py-3 py-md-0">
-                    <h2>Culture</h2>
-                    <p>Spain boasts a rich and diverse cultural tapestry that reflects its complex history and unique regional identities. Influences from the Celts, Phoenicians, Romans, Visigoths, and Moors have left indelible marks on Spain's cultural landscape. Flamenco, a passionate and rhythmic art form, epitomizes the soul of Spanish music and dance, captivating audiences worldwide. Bullfighting, though controversial, remains deeply embedded in Spanish tradition, symbolizing courage and skill. Spanish cuisine is a celebrated aspect of the culture, with tapas offering a delightful array of small dishes that showcase the country's culinary prowess. Festivals, such as La Tomatina and Running of the Bulls, exemplify Spain's penchant for vibrant celebrations. Architectural marvels like the Alhambra and Sagrada Familia reflect the country's artistic brilliance, while museums house masterpieces by iconic painters like Pablo Picasso and Salvador Dalí. The Spanish way of life, characterized by a relaxed pace, siestas, and a strong sense of community, contributes to the warm and welcoming atmosphere that defines the nation's culture.</p>
-                    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
-                    </div>
-                    </div>
-                    </div>
-                    </section>
-                    <!-- about end -->
+    <!-- culture start -->
+    <section class="about">
+    <div class="container">
+    <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 py-3 py-md-0">
+    <div class="card">
+    <img src="tourism/spain11.jpg" alt="" height="410px">
+    </div>
+    </div>
+    <div class="col-md-6 py-3 py-md-0">
+    <h2>Culture</h2>
+    <p>Spain boasts a rich and diverse cultural tapestry that reflects its complex history and unique regional identities. Influences from the Celts, Phoenicians, Romans, Visigoths, and Moors have left indelible marks on Spain's cultural landscape. Flamenco, a passionate and rhythmic art form, epitomizes the soul of Spanish music and dance, captivating audiences worldwide. Bullfighting, though controversial, remains deeply embedded in Spanish tradition, symbolizing courage and skill. Spanish cuisine is a celebrated aspect of the culture, with tapas offering a delightful array of small dishes that showcase the country's culinary prowess. Festivals, such as La Tomatina and Running of the Bulls, exemplify Spain's penchant for vibrant celebrations. Architectural marvels like the Alhambra and Sagrada Familia reflect the country's artistic brilliance, while museums house masterpieces by iconic painters like Pablo Picasso and Salvador Dalí. The Spanish way of life, characterized by a relaxed pace, siestas, and a strong sense of community, contributes to the warm and welcoming atmosphere that defines the nation's culture.</p>
+    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- culture end -->
         
-                    <!-- about start -->
-                    <section class="about">
-                    <div class="container">
-                    <div class="row" style="margin-top: 50px;">
-                    <div class="col-md-6 py-3 py-md-0">
-                    <div class="card">
-                    <img src="tourism/spain12.jpg" alt="" height="390px">
-                    </div>
-                    </div>
-                    <div class="col-md-6 py-3 py-md-0">
-                    <h2>Food</h2>
-                    <p>Spanish cuisine is a rich tapestry of flavors, reflecting the country's diverse regions and cultural influences. One iconic element is tapas, a collection of small, shareable dishes that showcase Spain's culinary prowess. Patatas bravas, fried potatoes with spicy tomato sauce, and gambas al ajillo, garlic-infused shrimp, are popular tapas choices. Paella, a saffron-infused rice dish with various proteins like chicken, rabbit, or seafood, is a symbol of Spanish communal dining. Jamón ibérico, cured ham from acorn-fed pigs, is a delicacy celebrated for its complex taste and texture. Spanish omelette, or tortilla española, made with eggs, potatoes, and onions, is a staple found in homes and restaurants alike. Olive oil is a cornerstone of Spanish cooking, enhancing dishes like gazpacho, a refreshing cold tomato soup. Desserts like churros with chocolate and flan showcase Spain's sweet side. Overall, Spanish cuisine is a celebration of fresh ingredients, bold flavors, and a passion for shared meals.</p>
-                    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
-                    </div>
-                    </div>
-                    </div>
-                    </section>
-                    <!-- about end -->    
-
+    <!-- food start -->
+    <section class="about">
+    <div class="container">
+    <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 py-3 py-md-0">
+    <div class="card">
+    <img src="tourism/spain12.jpg" alt="" height="390px">
+    </div>
+    </div>
+    <div class="col-md-6 py-3 py-md-0">
+    <h2>Food</h2>
+    <p>Spanish cuisine is a rich tapestry of flavors, reflecting the country's diverse regions and cultural influences. One iconic element is tapas, a collection of small, shareable dishes that showcase Spain's culinary prowess. Patatas bravas, fried potatoes with spicy tomato sauce, and gambas al ajillo, garlic-infused shrimp, are popular tapas choices. Paella, a saffron-infused rice dish with various proteins like chicken, rabbit, or seafood, is a symbol of Spanish communal dining. Jamón ibérico, cured ham from acorn-fed pigs, is a delicacy celebrated for its complex taste and texture. Spanish omelette, or tortilla española, made with eggs, potatoes, and onions, is a staple found in homes and restaurants alike. Olive oil is a cornerstone of Spanish cooking, enhancing dishes like gazpacho, a refreshing cold tomato soup. Desserts like churros with chocolate and flan showcase Spain's sweet side. Overall, Spanish cuisine is a celebration of fresh ingredients, bold flavors, and a passion for shared meals.</p>
+    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- food end -->    
+    <!-------------------- about end -------------------> 
             
-                <!-- section choose us start-->
-                <section id="choose-us" class="bg-light py-5">
-                <div class="container">
-                <h2 class="text-center display-4 mb-4">Why Choose Us</h2>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="feature">
-                <i class="fas fa-globe fa-4x mb-3"></i>
-                <h3>Global Reach</h3>
-                <p>Explore the world with our extensive network of destinations.</p>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="feature">
-                <i class="fas fa-users fa-4x mb-3"></i>
-                <h3>Expert Guides</h3>
-                <p>Our experienced guides ensure an enriching and safe travel experience.</p>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="feature">
-                <i class="fas fa-handshake fa-4x mb-3"></i>
-                <h3>Trusted Partners</h3>
-                <p>We collaborate with trusted local partners to offer authentic experiences.</p>
-                </div>
-                </div>
-                </div>
-                </div>
-                </section>
-                <!-- section choose us end-->
+    <!-- section choose us start-->
+    <section id="choose-us" class="bg-light py-5">
+    <div class="container">
+    <h2 class="text-center display-4 mb-4">Why Choose Us</h2>
+    <div class="row">
+    <div class="col-md-4">
+    <div class="feature">
+    <i class="fas fa-globe fa-4x mb-3"></i>
+    <h3>Global Reach</h3>
+    <p>Explore the world with our extensive network of destinations.</p>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="feature">
+    <i class="fas fa-users fa-4x mb-3"></i>
+    <h3>Expert Guides</h3>
+    <p>Our experienced guides ensure an enriching and safe travel experience.</p>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="feature">
+    <i class="fas fa-handshake fa-4x mb-3"></i>
+    <h3>Trusted Partners</h3>
+    <p>We collaborate with trusted local partners to offer authentic experiences.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- section choose us end-->
     
-            <!-- section travelers start -->
-            <section id="travelers" class="bg-light py-4">
-            <div class="container">
-            <p class="text-center display-6">What Our Travelers Say</p>
-            <div class="row">
-            <div class="col-md-6">
-            <div class="travelers">
-            <p>"I had an incredible journey with Your Tourism. The guides were knowledgeable, and the experiences were unforgettable. I can't wait to book my next adventure!"</p>
-            <p class="author">- Sarah, Canada</p>
-            </div>
-            </div>
-            <div class="col-md-6">
-            <div class="travelers">
-            <p>"The attention to detail and personalized service from Your Tourism made our family vacation truly special. We had an amazing time, and I highly recommend them."</p>
-            <p class="author">- David, USA</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-            <!-- section travelers end -->
+    <!-- section travelers start -->
+    <section id="travelers" class="bg-light py-4">
+    <div class="container">
+    <p class="text-center display-6">What Our Travelers Say</p>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="travelers">
+    <p>"I had an incredible journey with Your Tourism. The guides were knowledgeable, and the experiences were unforgettable. I can't wait to book my next adventure!"</p>
+    <p class="author">- Sarah, Canada</p>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="travelers">
+    <p>"The attention to detail and personalized service from Your Tourism made our family vacation truly special. We had an amazing time, and I highly recommend them."</p>
+    <p class="author">- David, USA</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- section travelers end -->
       
 
-           <!-- footert start -->
-           <footer id="footer">
-            <h1>Travel</h1>
-            <p>"Explore the world with us and let your adventures unfold."<br>
-                "Wanderlust: Where every journey becomes a story."</p>
-            <div class="social-links">
-            <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <div class="credit">
-            <p>Designed By <a href="#">VR Coding</a></p>
-            </div>
-            <div class="copyright">
-            <p>&copy;Copyright VR Coding. All Rights Reserved</p>
-            </div>
-            </footer>
-            <!-- footer end -->
+    <!-- footert start -->
+    <footer id="footer">
+    <h1>Travel</h1>
+    <p>"Explore the world with us and let your adventures unfold."<br>
+        "Wanderlust: Where every journey becomes a story."</p>
+    <div class="social-links">
+    <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="credit">
+    <p>Designed By <a class="nav-link" href="#">VR Coding</a></p>
+    </div>
+    <div class="copyright">
+    <p>&copy;Copyright VR Coding. All Rights Reserved</p>
+    </div>
+    </footer>
+    <!-- footer end -->
 
         
     <!-- script start -->

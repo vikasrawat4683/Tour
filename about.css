@@ -1,20 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    font-family: 'Lato', sans-serif;
-}
-
 /* navbar start */
 #navbar{
     background: whitesmoke;
 }
+
 #navbar.active {
-    background-color: lightgrey;
+    background: lightgrey;
 }
+
 #logo{
     font-size: 36px;
     font-weight: 550;
@@ -22,15 +14,19 @@
     text-shadow: 0px 1px 1px black;
     margin-bottom: 5px;
 }
+
 #logo span{
     color: #1a73e8;
 }
+
 .navbar-toggler span{
     color: #1a73e8;
 }
+
 .navbar-nav{
     margin-left: 5px;
 }
+
 .nav-item .nav-link{
     font-size: 16px;
     font-weight: 550;
@@ -39,10 +35,12 @@
     border-radius: 3px;
     transition: 0.5s ease;
 }
+
 .nav-item .nav-link:hover{
     background: #1a73e8;
     color: white;
 }
+
 #navbar form button{
     background: #1a73e8;
     color: white;
@@ -57,13 +55,18 @@
    background-repeat: no-repeat;
    margin-top: 50px;
 }
+
 #about-us h2{
+    margin-top: 20px;
     font-size: 25px;
     color: #ffffff;
+    text-shadow: 3px 3px darkblue;
 }
+
 #about-us p{
     font-size: 20px;
-    color: #ffffff
+    color: whitesmoke;
+    text-shadow: 2px 2px darkblue;
 
 }
 /* about-us end */
@@ -75,25 +78,17 @@
     background-repeat: no-repeat;
     margin-top: 50px;
 }
+
 #mission h2{
     font-size: 25px;
-    color: #ffffff;
+    color: whitesmoke;
+    text-shadow: 3px 3px darkblue;
 }
+
 #mission p{
     font-size: 1.25rem;
-    color: #ffffff
-}
-#mission ul{
-    font-size: 1.25rem;
-    list-style: none;
-    padding-left: 0;
-    color: #ffffff;
-}
-#mission ul li{
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    color: #ffffff
+    color: whitesmoke;
+    text-shadow: 2px 2px darkblue;
 }
 /* mission end */
 
@@ -104,20 +99,22 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 #customer h2{
     font-size: 36px;
     text-align: center;
     color: #ffffff;
+    text-shadow: 3px 3px darkblue;
 }
+
+.card-body{
+    height: 180px;
+}
+
 .card-text {
     font-size: 1.25rem;
     margin-bottom: 15px;
-}
-.card-text p {
-    text-align: right;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 15px;
+    text-shadow: 1px 0px darkblue;
 }
 /* customer end */
 
@@ -126,15 +123,21 @@
     width: 100%;
     margin-top: 50px;
     text-align: center;
-    background-image: url(tourism/index1.jpg);
-    background-size: auto;
+    background-color: whitesmoke;
 }
+
 #footer h1{
     color: black;
     font-weight: 600;
     padding-top: 30px;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 1px 1px darkblue;
 }
+
+#footer p{
+    color: black;
+    text-shadow: 1px 0px darkblue;
+}
+
 .social-links i{
     padding: 10px;
     border-radius: 5px;
@@ -146,6 +149,7 @@
     transition: 0.5s ease;
     cursor: pointer
 }
+
 .social-links i:hover{
     background: #1a73e8;
 }

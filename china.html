@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>China</title>
+    <title>china</title>
+    
+    <!----- css link ------>
     <link rel="stylesheet" href="styles.css">
+    <!----- css link ------>
 
     <!-- bootstrap link -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -15,79 +19,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- font awesome cdn -->
 
-
 </head>
 <body>
 
-      <!-- navbar start -->
-      <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container">
-        <a class="navbar-brand" href="index.html" id="logo"><span>Tou</span>rism</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span><i class="fa-solid fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="packages.html">Packages</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-        </li>
-        </ul>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
-        Sign Up
-        </button>
-        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        <form>
-        <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
-        </div>
-        <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-        </div>
-        <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-        </form>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </nav>
-        <!-- navbar end -->
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" >
+    <div class="container">
+    <a class="navbar-brand" href="index.html" id="logo"><span>Tou</span>rism</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav me-auto">
+    <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="packages.html">Packages</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+    </li>
+    </ul>
+    <button type="submit" class="btn btn-primary">
+    <a class="nav-link" href="login.html">Login</a>
+    </button>
+    </div>
+    </div>
+    </nav>
+    <!-- navbar end -->
 
 
     <!-- home section start -->
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
+    <div class="carousel-item active">
     <img src="tourism/china1.jpg" class="d-block w-100" alt="..." id="a">
     <div class="carousel-caption" id="b">
     <h1 id="c">WELCOME TO WORLD</h1>
     <h1 id="c">VISIT CHINA</h1>
     </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item">
     <img src="tourism/china4.jpg" class="d-block w-100" alt="..." id="a">
     <div class="carousel-caption" id="b">
     <h1 id="c">WELCOME TO WORLD</h1>
@@ -176,140 +155,143 @@
     </section>
     <!-- section gallery end -->
 
-            <!-- about start -->
-            <section class="about">
-            <div class="container">
-            <div class="main-txt">
-            <h1>About<span> Country</span></h1>
-            </div>
-            <div class="row" style="margin-top: 50px;">
-            <div class="col-md-6 py-3 py-md-0">
-            <div class="card">
-            <img src="tourism/china10.jpg" alt="">
-            </div>
-            </div>
-            <div class="col-md-6 py-3 py-md-0">
-            <h2>History</h2>
-            <p>The history of China spans thousands of years, characterized by remarkable continuity and significant changes. Ancient China emerged along the fertile Yellow River around 2000 BCE, giving rise to the Shang and Zhou dynasties. The concept of the Mandate of Heaven was introduced, asserting that rulers governed with divine approval. The Qin Dynasty, under Emperor Qin Shi Huang, unified China in 221 BCE and constructed the Great Wall. The Han Dynasty (206 BCE–220 CE) followed, bringing cultural achievements like the Silk Road trade routes. Subsequent periods saw the Tang and Song dynasties fostering artistic and technological advancements. The Mongol-led Yuan Dynasty ruled during the 13th and 14th centuries, succeeded by the Ming Dynasty, renowned for maritime explorations. The Qing Dynasty, led by the Manchus, ruled from 1644 to 1912, witnessing both territorial expansion and internal strife. The 19th century marked a challenging era with foreign invasions and internal upheavals, leading to the establishment of the Republic of China in 1912 under Sun Yat-sen.</p>
-            <a href="hotel.html"><button id="about-btn">Book Now</button></a>
-            </div>
-            </div>
-            </div>
-            </section>
-            <!-- about end -->
-            
-                <!-- about start -->
-                <section class="about">
-                <div class="container">
-                <div class="row" style="margin-top: 50px;">
-                <div class="col-md-6 py-3 py-md-0">
-                <div class="card">
-                <img src="tourism/china11.jpg" alt="">
-                </div>
-                </div>
-                <div class="col-md-6 py-3 py-md-0">
-                <h2>Culture</h2>
-                <p>China, with a rich history spanning thousands of years, boasts a diverse and complex culture that has greatly influenced the world. Rooted in ancient traditions and philosophical teachings such as Confucianism and Daoism, Chinese culture places a strong emphasis on harmony, respect for elders, and the interconnectedness of nature. The arts, including calligraphy, painting, and traditional Chinese opera, are integral components of Chinese culture, reflecting a deep appreciation for aesthetics and symbolism. Chinese cuisine, renowned globally for its variety and flavors, is a testament to the importance of food in Chinese culture, with communal meals serving as a vital social activity. Festivals like the Spring Festival (Chinese New Year) and Mid-Autumn Festival hold significant cultural importance, celebrating family, unity, and the changing seasons. Moreover, the Chinese language, with its intricate characters and tonal nature, plays a central role in shaping cultural identity.</p>
-                <a href="hotel.html"><button id="about-btn">Book Now</button></a>
-                </div>
-                </div>
-                </div>
-                </section>
-                <!-- about end -->
-    
-                <!-- about start -->
-                <section class="about">
-                <div class="container">
-                <div class="row" style="margin-top: 50px;">
-                <div class="col-md-6 py-3 py-md-0">
-                <div class="card">
-                <img src="tourism/china12.jpg" alt="" height="440px">
-                </div>
-                </div>
-                <div class="col-md-6 py-3 py-md-0">
-                <h2>Food</h2>
-                <p>China is renowned for its rich and diverse culinary heritage, spanning thousands of years and encompassing a vast array of flavors, textures, and cooking techniques. Chinese cuisine is not just a matter of sustenance; it's a reflection of the country's cultural and regional diversity. From the fiery spices of Sichuan to the delicate flavors of Cantonese dim sum, each region boasts its own distinct culinary traditions. Rice, wheat, and noodles are staple ingredients, forming the foundation of many iconic dishes. The Chinese place great importance on achieving a harmonious balance of flavors, combining sweet, sour, salty, bitter, and umami in their dishes. Popular cooking methods include stir-frying, steaming, braising, and deep-frying, resulting in a diverse array of textures and tastes. Dim sum, a style of small, flavorful dishes, is a beloved tradition, often enjoyed with tea in teahouses. Additionally, the vibrant street food culture adds another layer to the gastronomic experience, featuring a tantalizing array of skewers, buns, and dumplings. Overall, Chinese cuisine is a celebration of diversity, skillful preparation, and the joy of sharing meals with family and friends.</p>
-                <a href="hotel.html"><button id="about-btn">Book Now</button></a>
-                </div>
-                </div>
-                </div>
-                </section>
-                <!-- about end -->
+   <!-------------------- about start ---------------------->
 
+    <!-- history start -->
+    <section class="about">
+    <div class="container">
+    <div class="main-txt">
+    <h1>About<span> Country</span></h1>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 py-3 py-md-0">
+    <div class="card">
+    <img src="tourism/china10.jpg" alt="">
+    </div>
+    </div>
+    <div class="col-md-6 py-3 py-md-0">
+    <h2>History</h2>
+    <p>The history of China spans thousands of years, characterized by remarkable continuity and significant changes. Ancient China emerged along the fertile Yellow River around 2000 BCE, giving rise to the Shang and Zhou dynasties. The concept of the Mandate of Heaven was introduced, asserting that rulers governed with divine approval. The Qin Dynasty, under Emperor Qin Shi Huang, unified China in 221 BCE and constructed the Great Wall. The Han Dynasty (206 BCE–220 CE) followed, bringing cultural achievements like the Silk Road trade routes. Subsequent periods saw the Tang and Song dynasties fostering artistic and technological advancements. The Mongol-led Yuan Dynasty ruled during the 13th and 14th centuries, succeeded by the Ming Dynasty, renowned for maritime explorations. The Qing Dynasty, led by the Manchus, ruled from 1644 to 1912, witnessing both territorial expansion and internal strife. The 19th century marked a challenging era with foreign invasions and internal upheavals, leading to the establishment of the Republic of China in 1912 under Sun Yat-sen.</p>
+    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- history end -->
             
-                <!-- section choose us start-->
-                <section id="choose-us" class="bg-light py-5">
-                <div class="container">
-                <h2 class="text-center display-4 mb-4">Why Choose Us</h2>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="feature">
-                <i class="fas fa-globe fa-4x mb-3"></i>
-                <h3>Global Reach</h3>
-                <p>Explore the world with our extensive network of destinations.</p>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="feature">
-                <i class="fas fa-users fa-4x mb-3"></i>
-                <h3>Expert Guides</h3>
-                <p>Our experienced guides ensure an enriching and safe travel experience.</p>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="feature">
-                <i class="fas fa-handshake fa-4x mb-3"></i>
-                <h3>Trusted Partners</h3>
-                <p>We collaborate with trusted local partners to offer authentic experiences.</p>
-                </div>
-                </div>
-                </div>
-                </div>
-                </section>
-                <!-- section choose us end-->
+    <!-- culture start -->
+    <section class="about">
+    <div class="container">
+    <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 py-3 py-md-0">
+    <div class="card">
+    <img src="tourism/china11.jpg" alt="">
+    </div>
+    </div>
+    <div class="col-md-6 py-3 py-md-0">
+    <h2>Culture</h2>
+    <p>China, with a rich history spanning thousands of years, boasts a diverse and complex culture that has greatly influenced the world. Rooted in ancient traditions and philosophical teachings such as Confucianism and Daoism, Chinese culture places a strong emphasis on harmony, respect for elders, and the interconnectedness of nature. The arts, including calligraphy, painting, and traditional Chinese opera, are integral components of Chinese culture, reflecting a deep appreciation for aesthetics and symbolism. Chinese cuisine, renowned globally for its variety and flavors, is a testament to the importance of food in Chinese culture, with communal meals serving as a vital social activity. Festivals like the Spring Festival (Chinese New Year) and Mid-Autumn Festival hold significant cultural importance, celebrating family, unity, and the changing seasons. Moreover, the Chinese language, with its intricate characters and tonal nature, plays a central role in shaping cultural identity.</p>
+    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- culture end -->
     
-            <!-- section travelers start -->
-            <section id="travelers" class="bg-light py-4">
-            <div class="container">
-            <p class="text-center display-6">What Our Travelers Say</p>
-            <div class="row">
-            <div class="col-md-6">
-            <div class="travelers">
-            <p>"I had an incredible journey with Your Tourism. The guides were knowledgeable, and the experiences were unforgettable. I can't wait to book my next adventure!"</p>
-            <p class="author">- Sarah, Canada</p>
-            </div>
-            </div>
-            <div class="col-md-6">
-            <div class="travelers">
-            <p>"The attention to detail and personalized service from Your Tourism made our family vacation truly special. We had an amazing time, and I highly recommend them."</p>
-            <p class="author">- David, USA</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-            <!-- section travelers end -->
+    <!-- food start -->
+    <section class="about">
+    <div class="container">
+    <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 py-3 py-md-0">
+    <div class="card">
+    <img src="tourism/china12.jpg" alt="" height="440px">
+    </div>
+    </div>
+    <div class="col-md-6 py-3 py-md-0">
+    <h2>Food</h2>
+    <p>China is renowned for its rich and diverse culinary heritage, spanning thousands of years and encompassing a vast array of flavors, textures, and cooking techniques. Chinese cuisine is not just a matter of sustenance; it's a reflection of the country's cultural and regional diversity. From the fiery spices of Sichuan to the delicate flavors of Cantonese dim sum, each region boasts its own distinct culinary traditions. Rice, wheat, and noodles are staple ingredients, forming the foundation of many iconic dishes. The Chinese place great importance on achieving a harmonious balance of flavors, combining sweet, sour, salty, bitter, and umami in their dishes. Popular cooking methods include stir-frying, steaming, braising, and deep-frying, resulting in a diverse array of textures and tastes. Dim sum, a style of small, flavorful dishes, is a beloved tradition, often enjoyed with tea in teahouses. Additionally, the vibrant street food culture adds another layer to the gastronomic experience, featuring a tantalizing array of skewers, buns, and dumplings. Overall, Chinese cuisine is a celebration of diversity, skillful preparation, and the joy of sharing meals with family and friends.</p>
+    <a href="hotel.html"><button id="about-btn">Book Now</button></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- food end -->
 
-           <!-- footert start -->
-           <footer id="footer">
-            <h1>Travel</h1>
-            <p>"Explore the world with us and let your adventures unfold."<br>
-                "Wanderlust: Where every journey becomes a story."</p>
-            <div class="social-links">
-            <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <div class="credit">
-            <p>Designed By <a href="#">VR Coding</a></p>
-            </div>
-            <div class="copyright">
-            <p>&copy;Copyright VR Coding. All Rights Reserved</p>
-            </div>
-            </footer>
-            <!-- footer end -->
+    <!------------------------ about end ------------------------>
+            
+    <!-- section choose us start-->
+    <section id="choose-us" class="bg-light py-5">
+    <div class="container">
+    <h2 class="text-center display-4 mb-4">Why Choose Us</h2>
+    <div class="row">
+    <div class="col-md-4">
+    <div class="feature">
+    <i class="fas fa-globe fa-4x mb-3"></i>
+    <h3>Global Reach</h3>
+    <p>Explore the world with our extensive network of destinations.</p>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="feature">
+    <i class="fas fa-users fa-4x mb-3"></i>
+    <h3>Expert Guides</h3>
+    <p>Our experienced guides ensure an enriching and safe travel experience.</p>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="feature">
+    <i class="fas fa-handshake fa-4x mb-3"></i>
+    <h3>Trusted Partners</h3>
+    <p>We collaborate with trusted local partners to offer authentic experiences.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- section choose us end-->
+    
+    <!-- section travelers start -->
+    <section id="travelers" class="bg-light py-4">
+    <div class="container">
+    <p class="text-center display-6">What Our Travelers Say</p>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="travelers">
+    <p>"I had an incredible journey with Your Tourism. The guides were knowledgeable, and the experiences were unforgettable. I can't wait to book my next adventure!"</p>
+    <p class="author">- Sarah, Canada</p>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="travelers">
+    <p>"The attention to detail and personalized service from Your Tourism made our family vacation truly special. We had an amazing time, and I highly recommend them."</p>
+    <p class="author">- David, USA</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- section travelers end -->
+
+    <!-- footert start -->
+    <footer id="footer">
+    <h1>Travel</h1>
+    <p>"Explore the world with us and let your adventures unfold."<br>
+       "Wanderlust: Where every journey becomes a story."</p>
+    <div class="social-links">
+    <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="credit">
+    <p>Designed By <a class="nav-link" href="#">VR Coding</a></p>
+    </div>
+    <div class="copyright">
+    <p>&copy;Copyright VR Coding. All Rights Reserved</p>
+    </div>
+    </footer>
+    <!-- footer end -->
 
         
     <!-- script start -->
